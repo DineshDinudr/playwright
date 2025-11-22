@@ -1,15 +1,15 @@
 {
-  "name": "playwright",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "playwright-project",
+  "private": true,
   "type": "module",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:e2e": "npx playwright test --project=e2e",
+    "test:performance": "npx playwright test --project=performance",
+    "test:report": "npx playwright show-report"
+  },
   "devDependencies": {
-    "@playwright/test": "^1.51.0",
+    "@playwright/test": "^1.56.1",
     "@types/node": "^22.13.10"
   },
   "dependencies": {
